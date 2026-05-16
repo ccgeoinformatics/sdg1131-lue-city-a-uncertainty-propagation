@@ -99,7 +99,26 @@ From the repository root, run:
 python src/city_a_monte_carlo.py
 ```
 
-By default, this runs `444,130` Monte Carlo simulations per scenario for the three main thesis scenarios.
+By default, the script runs **444,130 Monte Carlo simulations per scenario** for the three main thesis scenarios. This value was selected after first running **500,000 simulations** and then conducting a convergence check to identify the required number of simulations across all scenarios.
+
+Convergence was assessed using a plateau criterion based on successive increases in sample size, *N*. For each reported statistic,
+
+$$
+s \in \{\tilde{x}, q_{2.5}, q_{97.5}\},
+$$
+
+stability was evaluated using the successive change:
+
+$$
+\Delta s = s_{N_{i+1}} - s_{N_i}.
+$$
+
+The minimum required *N* was defined as the smallest sample size for which all reported statistics, across all three indicators, satisfied the predefined tolerances for **two consecutive sample-size increments**. This indicates that further increases in *N* produced negligible changes in the reported summaries.
+
+The convergence tolerances were:
+
+- relative change in the median: **less than 0.5%**
+- relative change in the 2.5th and 97.5th percentiles: **less than 1%**
 
 For a quick test:
 
