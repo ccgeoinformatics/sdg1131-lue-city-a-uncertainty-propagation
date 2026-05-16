@@ -31,7 +31,7 @@ sdg113-lue-city-a-experiment/
 
 ## Documentation
 
-Additional experiment documentation is provided in `docs/city_a_experiment_notes.md`. This file now includes the R1–R17 LUE regime descriptions used to interpret Monte Carlo regime probabilities. A machine-readable version is available in `docs/lue_regime_descriptions.csv`.
+Additional experiment documentation is provided in `docs/city_a_experiment_notes.md`. This file includes the R1–R17 LUE regime descriptions used to interpret Monte Carlo regime probabilities. A machine-readable version is available in `docs/lue_regime_descriptions.csv`.
 
 ## City A experiment
 
