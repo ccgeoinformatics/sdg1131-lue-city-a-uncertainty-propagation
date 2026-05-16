@@ -192,6 +192,6 @@ A dedicated random generator is spawned for each scenario, so results are reprod
 
 ## Notes on generated files
 
-Large Monte Carlo CSVs are ignored by Git through `.gitignore`. This keeps the repository lightweight. To archive final outputs, consider using Zenodo, OSF, or GitHub Releases instead of committing large CSV files directly.
+Generated Monte Carlo output CSV files are not committed to the repository. This keeps the repository lightweight and avoids uploading large simulation files.
 
 
