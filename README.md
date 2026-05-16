@@ -31,7 +31,7 @@ sdg113-lue-city-a-experiment/
 
 ## Documentation
 
-Additional experiment documentation is provided in `docs/city_a_experiment_notes.md`. This file now includes the R1–R17 LUE regime descriptions used to interpret Monte Carlo regime probabilities. A machine-readable version is available in `docs/lue_regime_descriptions.csv`.
+Additional experiment documentation is provided in `docs/city_a_experiment_notes.md`. This file includes the R1–R17 LUE regime descriptions used to interpret Monte Carlo regime probabilities. A machine-readable version is available in `docs/lue_regime_descriptions.csv`.
 
 ## City A experiment
 
@@ -39,11 +39,11 @@ The default parameterization follows the City A illustrative experiment used in 
 
 | Quantity | Value |
 |---|---:|
-| BUA at t1 | 53.0 |
-| BUA at t2 | 61.5 |
-| Population at t1 | 320,000 |
-| Population at t2 | 330,000 |
-| Time interval | 10 years |
+| BUA at t1, km<sup>2</sup> | 53.0 |
+| BUA at t2, km<sup>2</sup> | 61.5 |
+| Population at t1, persons | 320,000 |
+| Population at t2, persons | 330,000 |
+| Time interval, years | 10 |
 | BUA relative standard deviation | 5% |
 | Population relative standard deviation | 10% |
 
@@ -99,7 +99,26 @@ From the repository root, run:
 python src/city_a_monte_carlo.py
 ```
 
-By default, this runs `444,130` Monte Carlo simulations per scenario for the three main thesis scenarios.
+By default, the script runs **444,130 Monte Carlo simulations per scenario** for the three main thesis scenarios. This value was selected after first running **500,000 simulations** and then conducting a convergence check to identify the required number of simulations across all scenarios.
+
+Convergence was assessed using a plateau criterion based on successive increases in sample size, *N*. For each reported statistic,
+
+$$
+s \in \{\tilde{x}, q_{2.5}, q_{97.5}\},
+$$
+
+stability was evaluated using the successive change:
+
+$$
+\Delta s = s_{N_{i+1}} - s_{N_i}.
+$$
+
+The minimum required *N* was defined as the smallest sample size for which all reported statistics, across all three indicators, satisfied the predefined tolerances for **two consecutive sample-size increments**. This indicates that further increases in *N* produced negligible changes in the reported summaries.
+
+The convergence tolerances were:
+
+- relative change in the median: **less than 0.5%**
+- relative change in the 2.5th and 97.5th percentiles: **less than 1%**
 
 For a quick test:
 
@@ -173,8 +192,6 @@ A dedicated random generator is spawned for each scenario, so results are reprod
 
 ## Notes on generated files
 
-Large Monte Carlo CSVs are ignored by Git through `.gitignore`. This keeps the repository lightweight. To archive final outputs, consider using Zenodo, OSF, or GitHub Releases instead of committing large CSV files directly.
-
-## Citation
+Generated Monte Carlo output CSV files are not committed to the repository. This keeps the repository lightweight and avoids uploading large simulation files.
 
 

@@ -14,10 +14,10 @@ These uncertain inputs are jointly sampled under scenario-specific correlation s
 
 | Input | Mean | Relative SD | SD |
 |---|---:|---:|---:|
-| BUA_t1 | 53.0 | 5% | 2.65 |
-| BUA_t2 | 61.5 | 5% | 3.075 |
-| Pop_t1 | 320,000 | 10% | 32,000 |
-| Pop_t2 | 330,000 | 10% | 33,000 |
+| BUA_t1, km<sup>2</sup> | 53.0 | 5% | 2.65 |
+| BUA_t2, km<sup>2</sup> | 61.5 | 5% | 3.075 |
+| Pop_t1, persons | 320,000 | 10% | 32,000 |
+| Pop_t2, persons | 330,000 | 10% | 33,000 |
 
 The time interval is 10 years.
 

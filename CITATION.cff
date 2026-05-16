@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this repository, please cite it using the metadata below."
 title: "SDG 11.3.1 LUE City A Uncertainty Propagation Experiment"
 authors:
-  - family-names: "[Family Name]"
-    given-names: "[Given Name]"
+  - family-names: "Santillan"
+    given-names: "Jojene"
 year: 2026
 version: "1.0.0"
 repository-code: "https://github.com/[username]/sdg113-lue-city-a-experiment"
