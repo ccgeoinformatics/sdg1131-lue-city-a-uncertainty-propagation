@@ -39,10 +39,10 @@ The default parameterization follows the City A illustrative experiment used in 
 
 | Quantity | Value |
 |---|---:|
-| BUA at t1 | 53.0 |
-| BUA at t2 | 61.5 |
-| Population at t1 | 320,000 |
-| Population at t2 | 330,000 |
+| BUA at t1,km<sup>2</sup> | 53.0 |
+| BUA at t2, km<sup>2</sup> | 61.5 |
+| Population at t1, persons | 320,000 |
+| Population at t2, persons | 330,000 |
 | Time interval | 10 years |
 | BUA relative standard deviation | 5% |
 | Population relative standard deviation | 10% |
