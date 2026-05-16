@@ -6,7 +6,7 @@ authors:
     given-names: "Jojene"
 year: 2026
 version: "1.0.0"
-repository-code: "https://github.com/[username]/sdg113-lue-city-a-experiment"
+repository-code: "https://github.com/ccgeoinformatics/sdg113-lue-city-a-experiment"
 license: "MIT"
 keywords:
   - SDG 11.3.1
